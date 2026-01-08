@@ -1,7 +1,8 @@
 import { useState } from "react";
- 
-const API_URL = "http://192.168.29.24:8000"; // backend laptop IP
- 
+import { API_BASE_URL } from "./api";
+
+const API_URL = API_BASE_URL; // Use the API base URL from api.js
+
 function PredictionForm({ goBack }) {
 
   const [form, setForm] = useState({
