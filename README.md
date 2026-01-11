@@ -1,16 +1,103 @@
-# React + Vite
+# 📊 Insurance Prediction Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly React frontend application that lets users interactively input their personal details to estimate insurance premium costs. It seamlessly connects to the **FastAPI backend** for real-time predictions. This project is built using **React and Vite** for fast development and performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔹 Clean and intuitive UI for insurance prediction
+- 🔹 Form input for user data (age, BMI, smoker status, etc.)
+- 🔹 Connects to a REST API backend for live predictions
+- 🔹 Built with **React (Vite)** for fast hot-reload development
+- 🔹 Easily extendable for styling or feature upgrades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧱 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+
+insurance-prediction-frontend-react/
+├── public/                      # Static assets
+├── src/                         # Application source code
+│   ├── components/             # React components
+│   ├── App.jsx                 # Main app component
+│   └── index.jsx               # App entry point
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+
+````
+
+---
+
+## 🛠️ Getting Started (Run Locally)
+
+### 🪄 Clone the Repo
+```bash
+git clone https://github.com/harinandanmv/insurance-prediction-frontend-react.git
+cd insurance-prediction-frontend-react
+````
+
+### 🧩 Install Dependencies
+
+```bash
+npm install
+```
+
+### 🚀 Start the Development Server
+
+```bash
+npm run dev
+```
+
+Your app will open at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📡 Connect to Backend
+
+This app expects the backend API (FastAPI) to be running and accessible (e.g., at `http://localhost:8000`).
+
+Update the API base URL inside your React config or `.env` file accordingly to ensure the prediction requests reach the backend.
+
+---
+
+## 📦 Built With
+
+| Technology | Role                       |
+| ---------- | -------------------------- |
+| React      | Frontend UI                |
+| Vite       | Dev server & build tooling |
+| JavaScript | Language                   |
+| CSS        | Styling                    |
+| REST       | API communication          |
+
+---
+
+## 🎨 UI Flow
+
+1. User opens the application in a browser
+2. Fills out details (age, BMI, smoker status, etc.)
+3. Clicks *Predict*
+4. App sends input to backend API
+5. Displays predicted insurance cost
+
+---
+
+## ⭐ Contributing
+
+Contributions are welcome!
+Whether it’s bug fixes, UI improvements, or deployment enhancements — feel free to open issues or PRs.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the LICENSE file for details.
